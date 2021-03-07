@@ -1,12 +1,22 @@
 # Java21_Dihtiar
-Информационная система онлайн сопровождения арендуемого автомобиля.
 
-Данная система позволяет удобно арендовать автомобиль по заданным критериям. Также система сможет отслеживать геолокацию автомобиля.
+Informational system for online rent cars.
+  
+Car extends Transport. Includes id, price, isAvailible, type, carType. Client can rent a chosen car.
 
-Правила использования:
+Scooter extends Transport. Includes id, price, isAvailible, type, carType. Client can rent a chosen scooter.
+  
+CarSharing implements ICarSharing. Allow to get information about all cars/ add new car/ delete car.
 
-1. Клиент видит список предлагаемых для аренды авто и может сделать выбор необходимого ему варианта.
-2. Клиент может ввести необходимые критерии для аренды определенного автомобиля (коробка передач, цена, количество мест и др.).
-3. С помощью фильтрации ему будут предложены подходящие варианты автомобилей, согласно критериям.
-4. Клиент выбирает авто и время аренды.
-5. Клиент совершает оплату онлайн и получает автомобиль на указанное время аренды.
+
+Abstract class Transport implements IDrivable Extends from Person. Allow to get information about a car.
+
+
+Interfaces
+
+Interface ICarSharing. To get information about all cars, add new cars and information about them and delete a car.
+
+Interface IDrivable. To get information about car and rent a car.
+
+
+
