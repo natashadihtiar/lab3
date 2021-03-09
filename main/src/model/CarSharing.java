@@ -1,5 +1,7 @@
 package model;
 
+import model.impl.Car;
+import model.impl.Scooter;
 import service.ICarSharing;
 
 import java.util.ArrayList;
