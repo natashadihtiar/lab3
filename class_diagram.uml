@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="46.388333333333335" y="0.0">model.IDrivable</node>
+    <node x="0.0" y="170.0">model.impl.Car</node>
+    <node x="44.84833333333333" y="340.0">service.impl.CarSharing</node>
+    <node x="46.388333333333335" y="85.0">model.Transport</node>
+    <node x="138.93" y="170.0">model.impl.Scooter</node>
+    <node x="40.34833333333333" y="255.0">service.ICarSharing</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="service.impl.CarSharing" target="model.impl.Scooter">
+      <point x="29.399999999999977" y="-17.5" />
+      <point x="147.7483333333333" y="310.0" />
+      <point x="206.84833333333333" y="310.0" />
+      <point x="206.84833333333333" y="230.0" />
+      <point x="199.43" y="230.0" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="model.Transport" target="model.IDrivable">
+      <point x="0.0" y="-17.5" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="service.ICarSharing" target="model.impl.Scooter">
+      <point x="39.0" y="-17.5" />
+      <point x="157.34833333333333" y="230.0" />
+      <point x="159.09666666666666" y="230.0" />
+      <point x="-40.333333333333336" y="17.5" />
+    </edge>
+    <edge source="service.impl.CarSharing" target="service.ICarSharing">
+      <point x="0.0" y="-17.5" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="model.impl.Scooter" target="model.Transport">
+      <point x="30.25" y="-17.5" />
+      <point x="229.68" y="140.0" />
+      <point x="168.01333333333332" y="140.0" />
+      <point x="52.125" y="17.5" />
+    </edge>
+    <edge source="service.impl.CarSharing" target="model.impl.Car">
+      <point x="-29.40000000000002" y="-17.5" />
+      <point x="88.94833333333331" y="310.0" />
+      <point x="29.84833333333333" y="310.0" />
+      <point x="29.84833333333333" y="230.0" />
+      <point x="43.5" y="230.0" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="service.ICarSharing" target="model.impl.Car">
+      <point x="-39.0" y="-17.5" />
+      <point x="79.34833333333333" y="230.0" />
+      <point x="72.5" y="230.0" />
+      <point x="29.0" y="17.5" />
+    </edge>
+    <edge source="model.impl.Car" target="model.Transport">
+      <point x="21.75" y="-17.5" />
+      <point x="65.25" y="150.0" />
+      <point x="98.51333333333334" y="150.0" />
+      <point x="-17.375" y="17.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="259.0" y="277.1428571428571" />
+  <SelectedNodes>
+    <node>service.impl.CarSharing</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

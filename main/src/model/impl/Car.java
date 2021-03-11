@@ -1,16 +1,26 @@
 package model.impl;
 
+import model.Transport;
+
 public class Car extends Transport {
-    String carType;
-    public Car(int id, float price, boolean isAvailible, String type,String carType) {
+    protected String carType;
+
+    public String getCarType() {
+        return carType;
+    }
+
+    public void setCarType(String carType) {
+        this.carType = carType;
+    }
+
+    public Car(int id, float price, boolean isAvailible, String type, String carType) {
         super(id, price, isAvailible, type);
-        this.carType=carType;
+        this.carType = carType;
     }
 
     @Override
-
-    /* Choose and rent a transport */
-    public void setTransport() {
-
+    public String getTransportInfo() {
+        return super.getTransportInfo() +
+            ", " + "carType: " + carType + " }";
     }
 }

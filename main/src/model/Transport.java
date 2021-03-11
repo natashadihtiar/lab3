@@ -1,16 +1,12 @@
 package model;
 
-import service.IDrivable;
-
 /*  It is an abstract class that implements IDrivable.
  *  Represents basic information about car */
-
-
-public  abstract class Transport implements IDrivable {
-int id;
-float price;
-boolean isAvailible;
-String type;
+public abstract class Transport implements IDrivable {
+    protected int id;
+    protected float price;
+    protected boolean isAvailible;
+    protected String type;
 
     public int getId() {
         return id;
@@ -52,9 +48,27 @@ String type;
     }
 
     @Override
-
-    /* Get information about car */
-    public void getTransportInfo() {
-
+    public String toString() {
+        return "Transport{" +
+            "id=" + id +
+            ", price=" + price +
+            ", isAvailible=" + isAvailible +
+            ", type='" + type + '\'';
     }
+
+    @Override
+    public String getTransportInfo() {
+        return this.toString();
+    }
+
+    @Override
+    public void setAvailable() {
+        this.isAvailible = true;
+    }
+
+    @Override
+    public void setBusy() {
+        this.isAvailible = false;
+    }
+
 }
