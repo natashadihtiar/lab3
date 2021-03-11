@@ -21,5 +21,5 @@ Interface ICarSharing. To get information about all cars, add new cars and infor
 Interface IDrivable. To get information about car and rent a car.
 
 
-![Image alt](https://github.com/NCJavaCode/Java21_Dihtiar/blob/master/class_diagram.png?raw=true)
+![Image alt](https://github.com/NCJavaCode/Java21_Dihtiar/blob/main/class_diagram.png?raw=true)
 
