@@ -21,6 +21,8 @@ public abstract class Transport implements IDrivable {
     }
 
     public void setPrice(float price) {
+        if(price < 0)
+            throw new RuntimeException("Price must be much than 0");
         this.price = price;
     }
 
